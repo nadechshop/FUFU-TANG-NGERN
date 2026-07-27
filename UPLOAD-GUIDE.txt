@@ -1,0 +1,23 @@
+FUFU & TANG NGERN STORE — VOLUME 1–12
+
+อัปเดต:
+- เพิ่ม Volume 10 Dinosaur World Version 2
+- เพิ่ม Volume 11 Fruit World Version 2
+- เพิ่ม Volume 12 Princess World Version 2
+- แต่ละเล่มมีหน้าปกและตัวอย่าง 2 หน้า
+- ป้าย NEW สำหรับ Volume 10–12
+- ช่องค้นหาสินค้า
+- ตัวกรองหมวด ฟูฟู่ / ไดโนเสาร์ / ผลไม้ / เจ้าหญิง
+- ตะกร้าและคำนวณราคา
+- โปร 3 เล่ม 179 บาท
+- โปร 5 เล่ม 199 บาท
+- ขอเลขบัญชีและแจ้งชำระเงินผ่าน LINE @110phoxx
+- รองรับมือถือและ iPad
+
+วิธีอัปโหลด:
+1. แตก ZIP
+2. เข้า Repository nadechshop.github.io
+3. กด + > Upload files
+4. เลือกไฟล์ทั้งหมด
+5. กด Commit changes
+6. รอ 1–3 นาทีแล้วรีเฟรชเว็บไซต์
