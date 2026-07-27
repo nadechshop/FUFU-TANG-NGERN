@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#21195d">
+<meta name="description" content="ร้านสมุดระบายสีฟูฟู่ & ถังเงิน รวม Volume 1–9 พร้อมแพ็กเกจ 1 เล่ม 79 บาท, 3 เล่ม 179 บาท และ 5 เล่ม 199 บาท">
+<title>ฟูฟู่ & ถังเงิน | ร้านสมุดระบายสี PDF</title>
+<style>
+:root{
+  --navy:#181650;--purple:#4938cc;--purple2:#6c5cff;--yellow:#ffd43b;
+  --ink:#171628;--muted:#6d6a7c;--soft:#f5f5ff;--line:#e8e7f2;
+  --white:#fff;--green:#16a166;--red:#ef4c47;--shadow:0 16px 38px rgba(31,25,91,.10)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans Thai",Tahoma,sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}
+button,input,textarea,select{font:inherit}
+.topbar{background:var(--navy);color:#fff;text-align:center;padding:10px 14px;font-size:13px;font-weight:850}
+.nav{position:sticky;top:0;z-index:40;background:#ffffffef;backdrop-filter:blur(12px);border-bottom:1px solid #eee;padding:13px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:950;font-size:20px}
+.logo{width:42px;height:42px;border-radius:13px;background:var(--yellow);display:grid;place-items:center;font-size:23px}
+.navlinks{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+.navbtn{padding:10px 14px;border-radius:999px;font-weight:900;font-size:13px;background:#f0eeff;color:var(--purple)}
+.navbtn.primary{background:var(--purple);color:#fff}
+.hero{padding:64px 5%;display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center;background:radial-gradient(circle at 85% 5%,#dce9ff 0,#f3f3ff 40%,#fff 74%)}
+.pill{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#fff3a8,#ffd53b);color:#21195d;padding:15px 26px;border:3px solid #fff;border-radius:999px;font-size:24px;line-height:1.25;font-weight:950;letter-spacing:.2px;box-shadow:0 10px 26px rgba(69,55,200,.22),0 0 0 2px rgba(69,55,200,.16);text-shadow:0 1px 0 rgba(255,255,255,.7)}
+.hero h1{font-size:56px;line-height:1.08;margin:18px 0 14px;letter-spacing:-1px}
+.hero h1 span{color:var(--purple)}
+.hero p{font-size:18px;line-height:1.75;color:var(--muted);margin:0}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 18px}
+.btn{border:0;border-radius:15px;padding:13px 18px;font-weight:900;cursor:pointer;text-align:center;display:inline-block}
+.btn.primary{background:var(--purple);color:#fff}.btn.outline{background:#fff;color:var(--purple);border:2px solid var(--purple)}.btn.soft{background:#f1efff;color:var(--purple)}
+.hero-points{display:flex;gap:18px;flex-wrap:wrap;color:#4f4c61;font-weight:800;font-size:14px}
+.hero-visual{position:relative}.hero-visual img{width:100%;display:block;border-radius:30px;box-shadow:0 28px 65px rgba(31,25,91,.18)}
+.hero-card{position:absolute;left:18px;bottom:18px;background:#ffffffef;padding:14px 17px;border-radius:17px;box-shadow:var(--shadow)}
+.hero-card b{font-size:22px;color:var(--green);display:block}.hero-card span{font-size:13px;color:var(--muted)}
+.section{padding:76px 5%}.soft{background:var(--soft)}
+.heading{max-width:820px;margin:0 auto 30px;text-align:center}.heading small{color:var(--purple);font-weight:950}.heading h2{font-size:40px;margin:8px 0 10px}.heading p{color:var(--muted);line-height:1.75;font-size:17px;margin:0}
+.packages{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.package{background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:var(--shadow);position:relative}
+.package.featured{border:2px solid var(--purple);background:linear-gradient(180deg,#fff,#f6f4ff)}
+.tag{display:inline-block;padding:7px 11px;border-radius:999px;font-size:12px;font-weight:950;background:#eceaff;color:var(--purple)}
+.tag.hot{background:#ffe4e4;color:#c92323}.package h3{font-size:30px;margin:13px 0 4px}.package p{color:var(--muted);margin:0 0 14px}.old{text-decoration:line-through;color:#9b98a7;font-weight:700}.price{font-size:46px;font-weight:950;color:var(--green);line-height:1;margin:6px 0 14px}.package ul{padding-left:20px;color:#4f4c61;line-height:1.9}
+.categories{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:26px}.filter{border:1px solid var(--line);background:#fff;color:#555267;padding:10px 15px;border-radius:999px;font-weight:900;cursor:pointer}.filter.active{background:var(--purple);color:#fff;border-color:var(--purple)}
+.grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 10px 28px rgba(31,25,91,.07)}
+.cover{position:relative;background:#eee}.cover img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover}.volume{position:absolute;top:12px;left:12px;background:rgba(24,22,80,.92);color:#fff;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:950}.best{position:absolute;top:12px;right:12px;background:var(--red);color:#fff;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:950}
+.product-body{padding:17px}.product h3{margin:0 0 5px;font-size:21px}.subtitle{color:var(--purple);font-weight:900;font-size:14px}.product p{color:var(--muted);font-size:14px;line-height:1.6;min-height:45px}.product-price{font-size:27px;font-weight:950;color:var(--green);margin:4px 0 14px}.product-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.new-product{max-width:1100px;margin:34px auto 0;border:2px dashed #b9b4e8;border-radius:25px;padding:30px;text-align:center;background:#faf9ff}.new-product .plus{width:62px;height:62px;border-radius:50%;background:#eceaff;color:var(--purple);display:grid;place-items:center;margin:0 auto 12px;font-size:34px;font-weight:700}.new-product h3{font-size:26px;margin:0 0 8px}.new-product p{color:var(--muted);margin:0 0 16px}
+.steps{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:21px;text-align:center}.step-no{width:48px;height:48px;border-radius:50%;background:var(--purple);color:#fff;display:grid;place-items:center;margin:0 auto 12px;font-weight:950;font-size:20px}.step h3{margin:0 0 7px}.step p{color:var(--muted);line-height:1.65;font-size:14px;margin:0}
+.reviews{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.review{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 10px 24px rgba(31,25,91,.05)}.stars{color:#ffb400;font-size:22px;letter-spacing:1px}.review p{color:var(--muted);line-height:1.75;min-height:82px}.review strong{display:block}.placeholder{border:2px dashed #c8c4df;background:#fbfbff}.placeholder .photo{height:120px;border-radius:16px;background:#f0eff8;display:grid;place-items:center;color:#9995aa;font-weight:900;margin-bottom:14px}
+.faq{max-width:900px;margin:0 auto}.faq details{background:#fff;border:1px solid var(--line);border-radius:17px;margin-bottom:12px;padding:0 18px}.faq summary{cursor:pointer;font-weight:900;padding:18px 0}.faq p{color:var(--muted);line-height:1.7;margin:0 0 18px}
+.footer{background:var(--navy);color:#fff;padding:38px 5% 90px;text-align:center}.footer p{color:#ffffffa8;font-size:13px}
+.modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(12,10,33,.84);padding:18px;align-items:center;justify-content:center}.modal.show{display:flex}.modal-box{width:min(1080px,100%);max-height:94vh;overflow:auto;background:#fff;border-radius:25px;padding:24px;position:relative}.close{position:absolute;right:12px;top:12px;width:42px;height:42px;border:0;border-radius:50%;background:#fff;box-shadow:0 5px 18px rgba(0,0,0,.18);font-size:27px;cursor:pointer}.preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:18px}.preview-grid figure{margin:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fafaff}.preview-grid figcaption{padding:10px 12px;color:var(--purple);font-weight:900;font-size:13px}.preview-grid img{width:100%;display:block;aspect-ratio:3/4;object-fit:contain;background:#fff}
+.line-float{position:fixed;right:18px;bottom:18px;z-index:90;width:64px;height:64px;border-radius:50%;background:#06c755;color:#fff;display:grid;place-items:center;font-size:30px;box-shadow:0 15px 32px rgba(6,199,85,.35)}
+
+.cart-nav{border:0;cursor:pointer}.cart-nav span{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--red);color:#fff;font-size:11px;margin-left:4px}
+.cart-overlay{display:none;position:fixed;inset:0;background:rgba(12,10,33,.62);z-index:119}.cart-overlay.show{display:block}
+.cart-drawer{position:fixed;top:0;right:-460px;width:min(440px,94vw);height:100vh;background:#fff;z-index:120;box-shadow:-18px 0 45px rgba(20,16,65,.22);transition:right .28s ease;display:flex;flex-direction:column}.cart-drawer.show{right:0}
+.cart-head{padding:20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.cart-head h2{margin:0}.cart-close{width:40px;height:40px;border:0;border-radius:50%;background:#f2f1f8;font-size:24px;cursor:pointer}
+.cart-items{padding:16px;overflow:auto;flex:1}.empty-cart{text-align:center;color:var(--muted);padding:50px 20px}.cart-item{border:1px solid var(--line);border-radius:17px;padding:14px;margin-bottom:12px}.cart-item-top{display:flex;justify-content:space-between;gap:12px}.cart-item h4{margin:0 0 5px;font-size:15px}.cart-item-price{font-weight:950;color:var(--green)}.remove-item{border:0;background:none;color:var(--red);font-weight:900;cursor:pointer}.qty-row{display:flex;align-items:center;justify-content:space-between;margin-top:12px}.qty-control{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;overflow:hidden}.qty-control button{width:34px;height:32px;border:0;background:#f4f3fb;font-size:18px;cursor:pointer}.qty-control span{width:38px;text-align:center;font-weight:900}
+.cart-foot{padding:18px;border-top:1px solid var(--line);background:#fafaff}.cart-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px;font-weight:900}.cart-total strong{font-size:28px;color:var(--green)}.cart-foot .btn{width:100%;margin-top:8px}.clear-cart{background:#fff;color:var(--red);border:1px solid #ffd0d0}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,30px);background:#171628;color:#fff;padding:12px 17px;border-radius:999px;z-index:150;opacity:0;pointer-events:none;transition:.25s;font-weight:800}.toast.show{opacity:1;transform:translate(-50%,0)}
+.payment-modal{display:none;position:fixed;inset:0;z-index:130;background:rgba(12,10,33,.84);padding:18px;align-items:center;justify-content:center}.payment-modal.show{display:flex}.payment-box{width:min(720px,100%);max-height:94vh;overflow:auto;background:#fff;border-radius:25px;padding:24px;position:relative}.payment-box h2{margin:0 50px 7px 0}.pay-summary{background:#f6f5ff;border-radius:17px;padding:15px;margin:16px 0}.pay-summary ul{margin:0;padding-left:20px;line-height:1.8}.pay-total{display:flex;justify-content:space-between;font-weight:950;font-size:20px;margin-top:10px;color:var(--green)}.payment-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field label{display:block;font-weight:900;margin-bottom:7px}.field input,.field textarea{width:100%;border:1px solid #dcd9eb;border-radius:13px;padding:12px}.field textarea{min-height:90px;resize:vertical}.field.full{grid-column:1/-1}.payment-note{color:var(--muted);font-size:13px;line-height:1.7;margin:12px 0}.payment-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+.price-breakdown{margin-top:12px;border-top:1px dashed #d8d5ea;padding-top:12px;display:grid;gap:7px}.price-line{display:flex;justify-content:space-between;gap:12px;color:#625f73;font-size:14px}.price-line.discount{color:var(--red);font-weight:900}.price-line.final{color:var(--green);font-weight:950;font-size:18px}.promo-note{margin:10px 0 0;background:#fff4cf;color:#8a5b00;border-radius:12px;padding:10px 12px;font-size:13px;font-weight:850;line-height:1.55}.slip-box{border:2px dashed #bbb6df;border-radius:16px;padding:14px;background:#faf9ff}.slip-box input{border:0!important;padding:6px 0!important}.slip-preview{display:none;margin-top:10px;max-width:220px;max-height:260px;object-fit:contain;border-radius:12px;border:1px solid var(--line);background:#fff}.slip-preview.show{display:block}.payment-phase{margin:16px 0 8px;padding:13px 14px;border-radius:15px;background:#f1efff;color:#4b3cb3;font-weight:900;line-height:1.6}.payment-actions.three{grid-template-columns:1fr 1fr 1fr}.secondary-action{background:#fff;color:var(--purple);border:2px solid var(--purple)}
+@media(max-width:650px){.payment-grid,.payment-actions,.payment-actions.three{grid-template-columns:1fr}.cart-nav{display:inline-block!important}.cart-drawer{width:100vw}.navlinks .cart-nav{display:inline-block}.payment-box{padding:20px}}
+
+@media(max-width:1050px){.grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.reviews{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.hero h1{font-size:46px}}
+@media(max-width:650px){.nav{padding:11px 14px}.brand{font-size:16px}.logo{width:38px;height:38px}.navlinks .navbtn:not(.primary){display:none}.hero{padding:44px 18px}.hero h1{font-size:36px}.hero p{font-size:16px}.packages,.grid,.steps{grid-template-columns:1fr}.heading h2{font-size:30px}.product-actions{grid-template-columns:1fr}.preview-grid{grid-template-columns:1fr}.hero-card{position:static;margin-top:12px}.section{padding:58px 18px}}
+
+@media(max-width:600px){.pill{font-size:19px;padding:13px 20px;border-width:2px;max-width:94%;text-align:center}}
+</style>
+</head>
+<body>
+<div class="topbar">🎉 โปรเปิดตัว: 1 เล่ม 79 บาท • ชุด 3 เล่ม 179 บาท • ชุด 5 เล่ม 199 บาท • ไฟล์ PDF พิมพ์ซ้ำได้</div>
+<nav class="nav">
+  <div class="brand"><span class="logo">🎨</span>ฟูฟู่ & ถังเงิน</div>
+  <div class="navlinks">
+    <a class="navbtn" href="#shop">สินค้า</a><a class="navbtn" href="#steps">วิธีสั่งซื้อ</a><button class="navbtn cart-nav" id="openCart">🛒 ตะกร้า <span id="cartCount">0</span></button><a class="navbtn primary line-order" data-product="สอบถามสินค้า">LINE สั่งซื้อ</a>
+  </div>
+</nav>
+<header class="hero">
+  <div>
+    <span class="pill">สมุดระบายสีเด็ก • ไฟล์ PDF</span>
+    <h1>เปลี่ยนเวลาหน้าจอ<br>เป็นเวลาแห่ง<span>จินตนาการ</span></h1>
+    <p>รวมการผจญภัยของฟูฟู่และถังเงิน พร้อมหมวดผลไม้ ไดโนเสาร์ และเจ้าหญิง ให้เด็กสนุก ฝึกสมาธิ กล้ามเนื้อมือ และความคิดสร้างสรรค์</p>
+    <div class="hero-actions"><a class="btn primary" href="#shop">เลือกซื้อสินค้า</a><a class="btn outline" href="#packages">ดูแพ็กเกจ</a></div>
+    <div class="hero-points"><span>✓ ไฟล์คมชัด</span><span>✓ เปิดบนมือถือได้</span><span>✓ พิมพ์ซ้ำได้</span></div>
+  </div>
+  <div class="hero-visual"><img src="cover-volume-1.jpg" alt="สมุดระบายสีฟูฟู่และถังเงิน"><div class="hero-card"><b>Volume 1–9</b><span>มีตัวอย่าง 2 หน้าต่อเล่ม</span></div></div>
+</header>
+
+<section class="section soft" id="packages">
+  <div class="heading"><small>PACKAGE</small><h2>เลือกแพ็กเกจที่เหมาะกับคุณ</h2><p>เลือกได้ทั้ง 1 เล่ม ชุด 3 เล่ม หรือชุด 5 เล่มราคาพิเศษ เพื่อให้เด็กได้ลองหลายเรื่อง</p></div>
+  <div class="packages">
+    <article class="package"><span class="tag">เริ่มต้น</span><h3>แพ็ก 1 เล่ม</h3><p>เลือก Volume ใดก็ได้ 1 เล่ม</p><div class="old">ปกติ 99 บาท</div><div class="price">79 บาท</div><ul><li>1 เล่ม รวมปก</li><li>ไฟล์ PDF</li><li>พิมพ์ซ้ำได้</li></ul><button class="btn primary add-cart" data-id="pack-1" data-name="แพ็ก 1 เล่ม" data-price="79">เพิ่มลงตะกร้า</button></article>
+    <article class="package"><span class="tag">โปรพิเศษ</span><h3>แพ็ก 3 เล่ม</h3><p>เลือกคละ 3 เล่มจาก Volume 1–9</p><div class="old">ราคาเต็ม 237 บาท</div><div class="price">179 บาท</div><ul><li>เลือกได้ 3 เล่ม</li><li>ประหยัด 58 บาท</li><li>คละ Volume ได้</li></ul><button class="btn primary add-cart" data-id="pack-3" data-name="แพ็ก 3 เล่ม" data-price="179">เพิ่มลงตะกร้า</button></article>
+    <article class="package featured"><span class="tag hot">ขายดีที่สุด</span><h3>แพ็ก 5 เล่ม</h3><p>เลือกคละ 5 เล่มจาก Volume 1–9</p><div class="old">ราคาเต็ม 395 บาท</div><div class="price">199 บาท</div><ul><li>เลือกได้ 5 เล่ม</li><li>คละหมวดได้</li><li>คุ้มที่สุดสำหรับครอบครัว</li></ul><button class="btn primary add-cart" data-id="pack-5" data-name="แพ็ก 5 เล่ม" data-price="199">เพิ่มลงตะกร้า</button></article>
+  </div>
+</section>
+
+<section class="section" id="shop">
+  <div class="heading"><small>SHOP</small><h2>หมวดสินค้า</h2><p>กดหมวดเพื่อกรองสินค้า แล้วเลือกดูตัวอย่างหน้าระบายสีได้ทันที</p></div>
+  <div class="categories"><button class="filter active" data-filter="all">ทั้งหมด</button><button class="filter" data-filter="fufu">ฟูฟู่ & ถังเงิน</button><button class="filter" data-filter="fruit">ผลไม้</button><button class="filter" data-filter="dino">ไดโนเสาร์</button><button class="filter" data-filter="princess">เจ้าหญิง</button></div>
+  <div class="grid" id="productGrid"></div>
+  <div class="new-product"><div class="plus">+</div><h3>พื้นที่เพิ่มสินค้าใหม่</h3><p>สามารถเพิ่ม Volume 10 หรือหมวดใหม่ เช่น สัตว์น่ารัก รถ อวกาศ และแบบฝึกหัดได้ภายหลัง</p><button class="btn soft line-order" data-product="สอบถามการเพิ่มสินค้าใหม่">เพิ่มสินค้าใหม่ภายหลัง</button></div>
+</section>
+
+<section class="section soft" id="steps">
+  <div class="heading"><small>HOW TO ORDER</small><h2>ขั้นตอนสั่งซื้อ</h2><p>สั่งซื้อได้ง่ายผ่าน LINE เพียงไม่กี่ขั้นตอน</p></div>
+  <div class="steps"><article class="step"><div class="step-no">1</div><h3>เลือกสินค้า</h3><p>เลือกเล่มหรือแพ็กที่ต้องการ แล้วเพิ่มสินค้าเข้าตะกร้า</p></article><article class="step"><div class="step-no">2</div><h3>กดสั่งผ่าน LINE</h3><p>ระบบจะรวมรายการและคำนวณยอดในตะกร้าให้อัตโนมัติ</p></article><article class="step"><div class="step-no">3</div><h3>ชำระเงิน</h3><p>กดแจ้งชำระเงิน กรอกข้อมูลการโอน แล้วส่งผ่าน LINE</p></article><article class="step"><div class="step-no">4</div><h3>รับไฟล์ PDF</h3><p>หลังยืนยันยอด ร้านจะส่งไฟล์ให้ตามช่องทางที่ตกลง</p></article></div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="heading"><small>REVIEWS</small><h2>รีวิวจากลูกค้า</h2><p>พื้นที่นี้เตรียมไว้สำหรับใส่รีวิวและรูปภาพลูกค้าจริงภายหลัง</p></div>
+  <div class="reviews"><article class="review placeholder"><div class="photo">ใส่รูปรีวิวลูกค้า</div><div class="stars">★★★★★</div><p>“ใส่ข้อความรีวิวจริงของลูกค้าที่นี่”</p><strong>ชื่อลูกค้า</strong></article><article class="review placeholder"><div class="photo">ใส่รูปรีวิวลูกค้า</div><div class="stars">★★★★★</div><p>“ใส่ข้อความรีวิวจริงของลูกค้าที่นี่”</p><strong>ชื่อลูกค้า</strong></article><article class="review placeholder"><div class="photo">ใส่รูปรีวิวลูกค้า</div><div class="stars">★★★★★</div><p>“ใส่ข้อความรีวิวจริงของลูกค้าที่นี่”</p><strong>ชื่อลูกค้า</strong></article></div>
+</section>
+
+<section class="section soft" id="faq">
+  <div class="heading"><small>FAQ</small><h2>คำถามที่พบบ่อย</h2></div>
+  <div class="faq"><details open><summary>สินค้าเป็นหนังสือจริงหรือไฟล์ดิจิทัล?</summary><p>สินค้าเป็นไฟล์ PDF สำหรับดาวน์โหลดและนำไปพิมพ์เอง ไม่ได้จัดส่งเป็นหนังสือเล่มจริง</p></details><details><summary>พิมพ์ซ้ำได้หรือไม่?</summary><p>สามารถพิมพ์ซ้ำเพื่อใช้งานส่วนตัวได้หลายรอบ ห้ามนำไฟล์ไปขายต่อ แจกต่อ หรือเผยแพร่สาธารณะ</p></details><details><summary>เปิดไฟล์บนมือถือและ iPad ได้ไหม?</summary><p>ได้ สามารถเปิดไฟล์ PDF บนมือถือ iPad แท็บเล็ต และคอมพิวเตอร์ได้</p></details><details><summary>แพ็ก 3 เล่มและ 5 เล่มเลือกคละได้ไหม?</summary><p>ได้ สามารถเลือกคละ Volume 1–9 ได้ตามจำนวนของแพ็ก แล้วแจ้งรายการที่เลือกผ่าน LINE</p></details><details><summary>ได้รับไฟล์เมื่อไร?</summary><p>ร้านจะส่งไฟล์หลังตรวจสอบการชำระเงินเรียบร้อยตามช่องทางที่ตกลงใน LINE</p></details></div>
+</section>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer"><div class="cart-head"><h2>🛒 ตะกร้าสินค้า</h2><button class="cart-close" id="closeCart">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-foot"><div class="cart-total"><span>ยอดสุทธิ</span><strong id="cartTotal">0 บาท</strong></div><div id="cartBreakdown"></div><button class="btn primary" id="checkoutBtn">สรุปคำสั่งซื้อ / ขอเลขบัญชี</button><button class="btn clear-cart" id="clearCart">ล้างตะกร้า</button></div></aside>
+<div class="payment-modal" id="paymentModal">
+  <div class="payment-box">
+    <button class="close" id="closePayment">×</button>
+    <h2>สรุปคำสั่งซื้อและแจ้งชำระเงิน</h2>
+    <p style="color:var(--muted);margin-top:0">
+      ขั้นตอนที่ 1 ส่งสรุปคำสั่งซื้อทาง LINE เพื่อขอเลขบัญชีจากร้าน
+      หลังโอนเงินแล้ว กรอกเพียง 3 รายการด้านล่าง
+    </p>
+
+    <div class="pay-summary" id="paymentSummary"></div>
+
+    <div class="payment-phase">ขั้นตอนที่ 1: ขอเลขบัญชีสำหรับโอนเงิน</div>
+    <button class="btn primary" id="requestAccount" style="width:100%;margin-top:12px">
+      ส่งสรุปคำสั่งซื้อเพื่อขอเลขบัญชีทาง LINE
+    </button>
+
+    <div class="payment-phase">ขั้นตอนที่ 2: หลังโอนเงิน กรอกข้อมูล 3 รายการ</div>
+    <div class="payment-grid">
+      <div class="field">
+        <label>วันที่และเวลาโอน</label>
+        <input id="payDateTime" type="datetime-local">
+      </div>
+
+      <div class="field">
+        <label>ยอดโอน</label>
+        <input id="payAmount" inputmode="decimal" placeholder="เช่น 199">
+      </div>
+
+      <div class="field full">
+        <label>สลิปหลักฐานการโอน</label>
+        <div class="slip-box">
+          <input id="paySlip" type="file" accept="image/*">
+          <div style="font-size:12px;color:var(--muted);margin-top:5px">
+            กรุณาเลือกรูปสลิปจากเครื่อง
+          </div>
+          <img id="slipPreview" class="slip-preview" alt="ตัวอย่างสลิป">
+        </div>
+      </div>
+    </div>
+
+    <div class="payment-note">
+      กรุณาตรวจสอบวันที่และเวลา ยอดโอน และสลิปให้ถูกต้องก่อนส่ง
+    </div>
+
+    <div class="payment-actions">
+      <button class="btn outline" id="backToCart">กลับไปตะกร้า</button>
+      <button class="btn primary" id="sendPayment">แจ้งชำระเงินและส่งสลิป</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast">เพิ่มลงตะกร้าแล้ว</div>
+
+<footer class="footer"><strong>ฟูฟู่ & ถังเงิน — Coloring Book Shop</strong><p>© 2026 สงวนลิขสิทธิ์ ห้ามนำไฟล์ไปขายต่อ แจกต่อ หรือเผยแพร่โดยไม่ได้รับอนุญาต</p></footer>
+<div id="modals"></div>
+<a class="line-float line-order" data-product="สอบถามสินค้า" aria-label="LINE">💬</a>
+<script>
+const lineBase='https://line.me/R/oaMessage/%40110phoxx/';
+const products=[
+{v:1,title:'Superhero Friends',cat:'fufu',desc:'แนะนำตัวฟูฟู่และถังเงินในชุดซูเปอร์ฮีโร่'},
+{v:2,title:'Fufu & Tang Ngern Adventure',cat:'fufu',desc:'การผจญภัยกับเพื่อนสัตว์ในป่า'},
+{v:3,title:'Sky Guardians',cat:'fufu',desc:'มังกรและพญาอินทรี ผู้พิทักษ์แห่งท้องฟ้า'},
+{v:4,title:'Enchanted Forest Friends',cat:'fufu',desc:'ผองเพื่อนในป่ามหัศจรรย์'},
+{v:5,title:'The Frozen Shadow Castle',cat:'fufu',desc:'การผจญภัยในปราสาทเงาน้ำแข็ง'},
+{v:6,title:'The City of Five Heroes',cat:'fufu',desc:'ทีมฮีโร่ทั้งห้าในมหานคร'},
+{v:7,title:'Fruit Fun Adventure',cat:'fruit',desc:'ผลไม้น่ารักสีสันสดใส'},
+{v:8,title:'Dinosaur World',cat:'dino',desc:'โลกไดโนเสาร์สำหรับนักผจญภัยตัวน้อย'},
+{v:9,title:'Fairy Tale Princesses',cat:'princess',desc:'เจ้าหญิงในโลกเทพนิยายแสนงดงาม'}
+];
+const grid=document.getElementById('productGrid'),modals=document.getElementById('modals');
+products.forEach((p,i)=>{
+ const hot=[1,5,8].includes(p.v)?'<span class="best">ขายดี</span>':'';
+ grid.insertAdjacentHTML('beforeend',`<article class="product" data-cat="${p.cat}"><div class="cover"><img src="cover-volume-${p.v}.jpg" alt="${p.title}"><span class="volume">VOLUME ${p.v}</span>${hot}</div><div class="product-body"><h3>${p.title}</h3><div class="subtitle">Volume ${p.v}</div><p>${p.desc}</p><div class="product-price">79 บาท</div><div class="product-actions"><button class="btn outline preview" data-modal="m${p.v}">ดูตัวอย่าง</button><button class="btn primary add-cart" data-id="vol-${p.v}" data-name="${p.title} Volume ${p.v}" data-price="79">เพิ่มลงตะกร้า</button></div></div></article>`);
+ modals.insertAdjacentHTML('beforeend',`<div class="modal" id="m${p.v}"><div class="modal-box"><button class="close" data-close="m${p.v}">×</button><h2>${p.title} — Volume ${p.v}</h2><p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p><div class="preview-grid"><figure><figcaption>หน้าปก</figcaption><img src="cover-volume-${p.v}.jpg"></figure><figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-${p.v}-page-1.jpg"></figure><figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-${p.v}-page-2.jpg"></figure></div><button class="btn primary add-cart" style="width:100%;margin-top:16px" data-id="vol-${p.v}" data-name="${p.title} Volume ${p.v}" data-price="79">เพิ่ม Volume ${p.v} ลงตะกร้า</button></div></div>`)
+});
+
+const CART_KEY='fufu_cart_v2';
+let cart=JSON.parse(localStorage.getItem(CART_KEY)||'[]');
+const cartDrawer=document.getElementById('cartDrawer'),cartOverlay=document.getElementById('cartOverlay');
+const cartItems=document.getElementById('cartItems'),cartCount=document.getElementById('cartCount'),cartTotal=document.getElementById('cartTotal'),cartBreakdown=document.getElementById('cartBreakdown');
+const paymentModal=document.getElementById('paymentModal'),paymentSummary=document.getElementById('paymentSummary');
+function money(n){return new Intl.NumberFormat('th-TH').format(n)+' บาท'}
+function itemBookUnits(x){if(x.id==='pack-5')return 5*x.qty;if(x.id==='pack-3')return 3*x.qty;return x.qty}
+function pricing(){
+ const books=cart.reduce((s,x)=>s+itemBookUnits(x),0);
+ const full=books*79;
+ const bundles5=Math.floor(books/5);
+ const after5=books%5;
+ const bundles3=Math.floor(after5/3);
+ const remainder=after5%3;
+ const final=bundles5*199+bundles3*179+remainder*79;
+ const discount5=bundles5*(5*79-199);
+ const discount3=bundles3*(3*79-179);
+ const discount=Math.max(0,discount5+discount3);
+ return {books,full,bundles5,bundles3,remainder,discount5,discount3,discount,final};
+}
+function saveCart(){localStorage.setItem(CART_KEY,JSON.stringify(cart));renderCart()}
+function addToCart(id,name,price){const found=cart.find(x=>x.id===id);if(found)found.qty+=1;else cart.push({id,name,price:Number(price),qty:1});saveCart();showToast();openCart()}
+function cartSum(){return pricing().final}
+function cartQty(){return pricing().books}
+function breakdownHTML(compact=false){const p=pricing();if(!p.books)return '';const d5=p.bundles5?`<div class="price-line discount"><span>ส่วนลดโปร 5 เล่ม${p.bundles5>1?' × '+p.bundles5:''}</span><strong>− ${money(p.discount5)}</strong></div>`:'';const d3=p.bundles3?`<div class="price-line discount"><span>ส่วนลดโปร 3 เล่ม${p.bundles3>1?' × '+p.bundles3:''}</span><strong>− ${money(p.discount3)}</strong></div>`:'';const notes=[];if(p.bundles5)notes.push(`${p.bundles5>1?p.bundles5+' ชุด × ':''}5 เล่ม ราคา 199 บาท`);if(p.bundles3)notes.push(`${p.bundles3>1?p.bundles3+' ชุด × ':''}3 เล่ม ราคา 179 บาท`);if(p.remainder)notes.push(`อีก ${p.remainder} เล่ม ราคาเล่มละ 79 บาท`);return `<div class="price-breakdown"><div class="price-line"><span>ราคาเต็ม (${p.books} เล่ม × 79 บาท)</span><strong>${money(p.full)}</strong></div>${d5}${d3}<div class="price-line final"><span>ราคาสุทธิ</span><strong>${money(p.final)}</strong></div>${notes.length?'<div class="promo-note">ระบบคำนวณโปรอัตโนมัติ: '+notes.join(' + ')+'</div>':''}</div>`}
+function renderCart(){const p=pricing();cartCount.textContent=p.books;cartTotal.textContent=money(p.final);cartBreakdown.innerHTML=breakdownHTML(true);if(!cart.length){cartItems.innerHTML='<div class="empty-cart">ยังไม่มีสินค้าในตะกร้า<br>เลือกสินค้าแล้วกด “เพิ่มลงตะกร้า”</div>';cartBreakdown.innerHTML='';return}cartItems.innerHTML=cart.map(x=>{const units=itemBookUnits(x);const shown=x.id==='pack-5'?money(199*x.qty):x.id==='pack-3'?money(179*x.qty):money(79*x.qty);const unitText=x.id==='pack-5'?'เทียบเท่า 5 เล่ม / แพ็ก':x.id==='pack-3'?'เทียบเท่า 3 เล่ม / แพ็ก':'79 บาท / เล่ม';return `<div class="cart-item"><div class="cart-item-top"><div><h4>${x.name}</h4><div class="cart-item-price">${shown}</div></div><button class="remove-item" data-remove="${x.id}">ลบ</button></div><div class="qty-row"><small>${unitText} · รวม ${units} เล่ม</small><div class="qty-control"><button data-dec="${x.id}">−</button><span>${x.qty}</span><button data-inc="${x.id}">+</button></div></div></div>`}).join('')}
+function openCart(){cartDrawer.classList.add('show');cartOverlay.classList.add('show')}
+function closeCart(){cartDrawer.classList.remove('show');cartOverlay.classList.remove('show')}
+function showToast(){const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)}
+function orderLines(){return cart.map(x=>`- ${x.name} × ${x.qty} (${itemBookUnits(x)} เล่ม)`).join('\n')}
+function buildPaymentSummary(){const p=pricing();paymentSummary.innerHTML=`<ul>${cart.map(x=>`<li>${x.name} × ${x.qty} — ${itemBookUnits(x)} เล่ม</li>`).join('')}</ul>${breakdownHTML()}`;document.getElementById('payAmount').value=p.final}
+function openPayment(){if(!cart.length){alert('กรุณาเลือกสินค้าก่อน');return}closeCart();buildPaymentSummary();paymentModal.classList.add('show')}
+function orderMessage(){
+ const p=pricing();
+ return `ขอสั่งซื้อสมุดระบายสีและขอเลขบัญชีสำหรับชำระเงิน
+
+รายการสินค้า
+${orderLines()}
+
+ราคาเต็ม: ${money(p.full)}
+โปร 5 เล่ม: ${p.bundles5} ชุด
+โปร 3 เล่ม: ${p.bundles3} ชุด
+ส่วนลดรวม: ${money(p.discount)}
+ราคาสุทธิที่ต้องชำระ: ${money(p.final)}
+
+รบกวนแจ้งเลขบัญชีสำหรับโอนเงินให้ด้วยครับ`;
+}
+
+function paymentMessage(){
+ const p=pricing();
+ const value=document.getElementById('payDateTime').value;
+ const amount=document.getElementById('payAmount').value.trim()||p.final;
+ let dateTime='-';
+
+ if(value){
+   const dt=new Date(value);
+   dateTime=new Intl.DateTimeFormat('th-TH',{
+     dateStyle:'medium',
+     timeStyle:'short'
+   }).format(dt);
+ }
+
+ return `แจ้งชำระเงินค่าสมุดระบายสี
+
+รายการสินค้า
+${orderLines()}
+
+ราคาเต็ม: ${money(p.full)}
+โปร 5 เล่ม: ${p.bundles5} ชุด
+โปร 3 เล่ม: ${p.bundles3} ชุด
+ส่วนลดรวม: ${money(p.discount)}
+ราคาสุทธิ: ${money(p.final)}
+
+วันที่และเวลาโอน: ${dateTime}
+ยอดที่โอน: ${amount} บาท
+
+ได้แนบสลิปหลักฐานการโอนเงินมาด้วย
+กรุณาตรวจสอบและยืนยันการรับชำระเงินครับ`;
+}
+
+async function sharePayment(){
+ const dateTime=document.getElementById('payDateTime').value;
+ const amount=document.getElementById('payAmount').value.trim();
+ const slip=document.getElementById('paySlip').files[0];
+
+ if(!dateTime){
+   alert('กรุณาเลือกวันที่และเวลาโอน');
+   return;
+ }
+ if(!amount){
+   alert('กรุณากรอกยอดโอน');
+   return;
+ }
+ if(!slip){
+   alert('กรุณาแนบสลิปหลักฐานการโอน');
+   return;
+ }
+
+ const text=paymentMessage();
+
+ if(navigator.share&&navigator.canShare&&navigator.canShare({files:[slip]})){
+   try{
+     await navigator.share({
+       title:'แจ้งชำระเงิน ฟูฟู่ & ถังเงิน',
+       text,
+       files:[slip]
+     });
+     return;
+   }catch(e){
+     if(e.name==='AbortError')return;
+   }
+ }
+
+ window.open(lineBase+'?'+encodeURIComponent(text),'_blank');
+ alert('ระบบเปิด LINE พร้อมข้อความแล้ว กรุณาแนบรูปสลิปในแชต LINE อีกครั้ง');
+}
+
+renderCart();
+document.getElementById('openCart').addEventListener('click',openCart);
+document.getElementById('closeCart').addEventListener('click',closeCart);
+cartOverlay.addEventListener('click',closeCart);
+
+document.getElementById('clearCart').addEventListener('click',()=>{
+  if(confirm('ต้องการล้างตะกร้าทั้งหมดหรือไม่?')){
+    cart=[];
+    saveCart();
+  }
+});
+
+document.getElementById('checkoutBtn').addEventListener('click',openPayment);
+document.getElementById('closePayment').addEventListener('click',()=>paymentModal.classList.remove('show'));
+
+document.getElementById('backToCart').addEventListener('click',()=>{
+  paymentModal.classList.remove('show');
+  openCart();
+});
+
+document.getElementById('requestAccount').addEventListener('click',()=>{
+  window.open(lineBase+'?'+encodeURIComponent(orderMessage()),'_blank');
+});
+
+document.getElementById('sendPayment').addEventListener('click',sharePayment);
+
+document.getElementById('paySlip').addEventListener('change',e=>{
+  const f=e.target.files[0];
+  const img=document.getElementById('slipPreview');
+
+  if(!f){
+    img.classList.remove('show');
+    img.removeAttribute('src');
+    return;
+  }
+
+  img.src=URL.createObjectURL(f);
+  img.classList.add('show');
+});
+
+
+document.addEventListener('click',e=>{
+ const add=e.target.closest('.add-cart');if(add){addToCart(add.dataset.id,add.dataset.name,add.dataset.price);return}
+ const inc=e.target.closest('[data-inc]');if(inc){const item=cart.find(x=>x.id===inc.dataset.inc);if(item){item.qty++;saveCart()}return}
+ const dec=e.target.closest('[data-dec]');if(dec){const item=cart.find(x=>x.id===dec.dataset.dec);if(item){item.qty--;if(item.qty<=0)cart=cart.filter(x=>x.id!==item.id);saveCart()}return}
+ const rem=e.target.closest('[data-remove]');if(rem){cart=cart.filter(x=>x.id!==rem.dataset.remove);saveCart();return}
+ const order=e.target.closest('.line-order');if(order){const product=order.dataset.product||'สอบถามสินค้า';window.open(lineBase+'?'+encodeURIComponent(`สวัสดีครับ สนใจ ${product} รบกวนส่งรายละเอียดการสั่งซื้อให้ด้วยครับ`),'_blank')}
+ const preview=e.target.closest('.preview');if(preview)document.getElementById(preview.dataset.modal).classList.add('show');
+ const close=e.target.closest('.close');if(close)document.getElementById(close.dataset.close).classList.remove('show');
+ if(e.target.classList.contains('modal'))e.target.classList.remove('show');
+ const filter=e.target.closest('.filter');if(filter){document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));filter.classList.add('active');const f=filter.dataset.filter;document.querySelectorAll('.product').forEach(c=>c.style.display=f==='all'||c.dataset.cat===f?'':'none')}
+});
+</script>
+</body></html>
