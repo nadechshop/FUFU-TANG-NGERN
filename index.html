@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#3120a8">
-<title>Fufu & Tang Ngern Coloring Shop | Volume 1–12</title>
+<title>Fufu & Tang Ngern Coloring Shop | Volume 1–13</title>
 <style>
 :root {
   --purple:#3a28c7; --deep:#171044; --yellow:#ffd84d; --pink:#ff6fa9;
@@ -131,26 +131,28 @@ footer p{color:#ffffff9c}
   .field.full{grid-column:auto} .catalog-tools{display:block}
   .filters{margin-top:12px}
 }
+
+.favorite-btn{position:absolute;bottom:14px;right:14px;width:42px;height:42px;border:0;border-radius:50%;background:#fff;color:#c5bfd6;font-size:22px;box-shadow:0 7px 18px #0002;cursor:pointer}.favorite-btn.active{color:#ff3565}.toast{position:fixed;left:50%;bottom:24px;z-index:150;transform:translate(-50%,120px);background:#171044;color:#fff;padding:13px 18px;border-radius:999px;font-weight:900;transition:.25s;box-shadow:0 12px 30px #0004}.toast.show{transform:translate(-50%,0)}.warning-section{background:#fff5f5;padding:58px 5%;border-top:5px solid #e53935}.warning-wrap{max-width:1120px;margin:auto;background:#fff;border:2px solid #ffcdd2;border-radius:24px;padding:30px;box-shadow:0 14px 38px #6d11110d}.warning-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:24px}.warning-section h2,.warning-section h3{color:#c62828}.warning-section li{margin:9px 0;line-height:1.55}.allowed h3{color:#14863b}.commercial{background:#fff8e1;border-left:6px solid #ff9800;padding:18px;border-radius:14px}.install-btn{display:none;background:#fff;color:var(--purple);border:2px solid var(--purple);padding:10px 14px;border-radius:999px;font-weight:900;cursor:pointer}@media(max-width:800px){.warning-grid{grid-template-columns:1fr}}
 </style>
-</head>
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"></head>
 <body>
 <div class="top-note">🎉 โปรพิเศษ: 3 เล่ม 179 บาท • 5 เล่ม 199 บาท</div>
 <nav>
   <div class="logo"><span class="logo-icon">🎨</span>Fufu & Tang Ngern</div>
   <div class="nav-links">
     <a href="#products">สินค้า</a><a href="#packages">แพ็กเกจ</a><a href="#howto">วิธีสั่งซื้อ</a>
-    <button class="cart-button" onclick="openCart()">🛒 ตะกร้า <span class="cart-count" id="cartCount">0</span></button>
+    <button id="installBtn" class="install-btn">ติดตั้งแอป</button><button class="cart-button" onclick="openCart()">🛒 ตะกร้า <span class="cart-count" id="cartCount">0</span></button>
   </div>
 </nav>
 
 <header class="hero">
   <div class="hero-copy">
     <div class="badge">สมุดระบายสีเด็ก • ไฟล์ PDF</div>
-    <h1>รวมครบ<br><span>Volume 1–12</span></h1>
-    <p>สมุดระบายสีสำหรับเด็กหลากหลายธีม ทั้งฟูฟู่ & ถังเงิน ไดโนเสาร์ ผลไม้ และเจ้าหญิง ดาวน์โหลดเป็นไฟล์ PDF ปริ้นเล่นได้หลายครั้ง</p>
+    <h1>รวมครบ<br><span>Volume 1–13</span></h1>
+    <p>สมุดระบายสีสำหรับเด็กหลากหลายธีม ทั้งฟูฟู่ & ถังเงิน ไดโนเสาร์ ผลไม้ และเจ้าหญิง ดาวน์โหลดเป็นไฟล์ PDF ปริ้นใช้งานส่วนตัวได้หลายครั้ง</p>
     <div class="hero-actions"><a class="btn primary" href="#products">เลือกสินค้า</a><a class="btn ghost" href="#packages">ดูโปรพิเศษ</a></div>
   </div>
-  <div class="hero-art"><img src="cover-volume-10.jpg" alt="Volume 10"></div>
+  <div class="hero-art"><img loading="lazy" src="cover-volume-10.jpg" alt="Volume 10"></div>
 </header>
 
 <div class="promo-strip">
@@ -160,7 +162,7 @@ footer p{color:#ffffff9c}
 </div>
 
 <section class="products" id="products">
-  <div class="section-head"><div class="eyebrow">PRODUCT CATALOG</div><h2>เลือกสมุดระบายสีที่ชอบ</h2><p>เพิ่มใหม่ Volume 10–12 พร้อมระบบค้นหาและตัวกรองหมวดสินค้า</p></div>
+  <div class="section-head"><div class="eyebrow">PRODUCT CATALOG</div><h2>เลือกสมุดระบายสีที่ชอบ</h2><p>เพิ่มใหม่ Volume 10–13 พร้อมระบบค้นหาและตัวกรองหมวดสินค้า</p></div>
   <div class="catalog-tools">
     <input class="search-box" id="searchInput" placeholder="ค้นหา เช่น ไดโนเสาร์, ผลไม้, เจ้าหญิง หรือ Volume 10">
     <div class="filters">
@@ -174,11 +176,10 @@ footer p{color:#ffffff9c}
   <div class="product-grid">
       <article class="product-card" data-category="fufu" data-search="volume 1 superhero friends">
         <div class="cover">
-          <img src="cover-volume-1.jpg" alt="Superhero Friends Volume 1">
+          <img loading="lazy" src="cover-volume-1.jpg" alt="Superhero Friends Volume 1">
           <span class="volume">VOL. 1</span>
           
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Superhero Friends</h3>
           <div class="price-row">
@@ -194,11 +195,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="fufu" data-search="volume 2 coloring adventure">
         <div class="cover">
-          <img src="cover-volume-2.jpg" alt="Coloring Adventure Volume 2">
+          <img loading="lazy" src="cover-volume-2.jpg" alt="Coloring Adventure Volume 2">
           <span class="volume">VOL. 2</span>
           
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Coloring Adventure</h3>
           <div class="price-row">
@@ -214,11 +214,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="fufu" data-search="volume 3 sky guardians">
         <div class="cover">
-          <img src="cover-volume-3.jpg" alt="Sky Guardians Volume 3">
+          <img loading="lazy" src="cover-volume-3.jpg" alt="Sky Guardians Volume 3">
           <span class="volume">VOL. 3</span>
           
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Sky Guardians</h3>
           <div class="price-row">
@@ -234,11 +233,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="fufu" data-search="volume 4 enchanted forest friends">
         <div class="cover">
-          <img src="cover-volume-4.jpg" alt="Enchanted Forest Friends Volume 4">
+          <img loading="lazy" src="cover-volume-4.jpg" alt="Enchanted Forest Friends Volume 4">
           <span class="volume">VOL. 4</span>
           
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Enchanted Forest Friends</h3>
           <div class="price-row">
@@ -254,11 +252,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="fufu" data-search="volume 5 the frozen shadow castle">
         <div class="cover">
-          <img src="cover-volume-5.jpg" alt="The Frozen Shadow Castle Volume 5">
+          <img loading="lazy" src="cover-volume-5.jpg" alt="The Frozen Shadow Castle Volume 5">
           <span class="volume">VOL. 5</span>
           
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>The Frozen Shadow Castle</h3>
           <div class="price-row">
@@ -274,11 +271,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="fufu" data-search="volume 6 the city of five heroes">
         <div class="cover">
-          <img src="cover-volume-6.jpg" alt="The City of Five Heroes Volume 6">
+          <img loading="lazy" src="cover-volume-6.jpg" alt="The City of Five Heroes Volume 6">
           <span class="volume">VOL. 6</span>
           
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>The City of Five Heroes</h3>
           <div class="price-row">
@@ -294,11 +290,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="fruit" data-search="volume 7 fruit friends">
         <div class="cover">
-          <img src="cover-volume-7.jpg" alt="Fruit Friends Volume 7">
+          <img loading="lazy" src="cover-volume-7.jpg" alt="Fruit Friends Volume 7">
           <span class="volume">VOL. 7</span>
           
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Fruit Friends</h3>
           <div class="price-row">
@@ -314,11 +309,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="dinosaur" data-search="volume 8 dinosaur world">
         <div class="cover">
-          <img src="cover-volume-8.jpg" alt="Dinosaur World Volume 8">
+          <img loading="lazy" src="cover-volume-8.jpg" alt="Dinosaur World Volume 8">
           <span class="volume">VOL. 8</span>
           
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Dinosaur World</h3>
           <div class="price-row">
@@ -334,11 +328,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="princess" data-search="volume 9 fairytale princess">
         <div class="cover">
-          <img src="cover-volume-9.jpg" alt="Fairytale Princess Volume 9">
+          <img loading="lazy" src="cover-volume-9.jpg" alt="Fairytale Princess Volume 9">
           <span class="volume">VOL. 9</span>
           
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Fairytale Princess</h3>
           <div class="price-row">
@@ -354,11 +347,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="dinosaur" data-search="volume 10 dinosaur world • version 2">
         <div class="cover">
-          <img src="cover-volume-10.jpg" alt="Dinosaur World • Version 2 Volume 10">
+          <img loading="lazy" src="cover-volume-10.jpg" alt="Dinosaur World • Version 2 Volume 10">
           <span class="volume">VOL. 10</span>
           <span class="new-badge">NEW</span>
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Dinosaur World • Version 2</h3>
           <div class="price-row">
@@ -374,11 +366,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="fruit" data-search="volume 11 fruit world • version 2">
         <div class="cover">
-          <img src="cover-volume-11.jpg" alt="Fruit World • Version 2 Volume 11">
+          <img loading="lazy" src="cover-volume-11.jpg" alt="Fruit World • Version 2 Volume 11">
           <span class="volume">VOL. 11</span>
           <span class="new-badge">NEW</span>
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Fruit World • Version 2</h3>
           <div class="price-row">
@@ -394,11 +385,10 @@ footer p{color:#ffffff9c}
     
       <article class="product-card" data-category="princess" data-search="volume 12 princess world • version 2">
         <div class="cover">
-          <img src="cover-volume-12.jpg" alt="Princess World • Version 2 Volume 12">
+          <img loading="lazy" src="cover-volume-12.jpg" alt="Princess World • Version 2 Volume 12">
           <span class="volume">VOL. 12</span>
           <span class="new-badge">NEW</span>
-        </div>
-        <div class="product-info">
+        <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button></div><div class="product-info">
           <p class="series">COLORING BOOK • PDF</p>
           <h3>Princess World • Version 2</h3>
           <div class="price-row">
@@ -411,7 +401,19 @@ footer p{color:#ffffff9c}
           </div>
         </div>
       </article>
-    </div>
+    
+      <article class="product-card" data-category="princess" data-search="volume 13 princess world version 2 เจ้าหญิง">
+        <div class="cover">
+          <img loading="lazy" src="cover-volume-13.jpg" alt="Princess World Version 2 Volume 13">
+          <span class="volume">VOL. 13</span><span class="new-badge">NEW</span>
+          <button class="favorite-btn" aria-label="รายการโปรด" onclick="toggleFavorite(event,this)">♥</button>
+        </div>
+        <div class="product-info"><p class="series">COLORING BOOK • PDF</p><h3>Princess World • Version 2</h3>
+          <div class="price-row"><strong>79 บาท</strong><span>ไฟล์ PDF</span></div>
+          <div class="card-actions"><button class="btn ghost" onclick="openPreview(13)">ดูตัวอย่าง</button><button class="btn primary" onclick="addVolume(13)">เพิ่มลงตะกร้า</button></div>
+        </div>
+      </article>
+  </div>
 </section>
 
 <section class="packages" id="packages">
@@ -447,6 +449,7 @@ footer p{color:#ffffff9c}
   </div>
 </section>
 
+<section class="warning-section"><div class="warning-wrap"><div class="warning-grid"><div><h2>⚠️ ข้อห้ามในการใช้งาน</h2><p><strong>ลิขสิทธิ์ © Fufu & Tang Ngern Coloring Shop</strong></p><p>ไฟล์และภาพทั้งหมดเป็นทรัพย์สินทางปัญญาของผู้จัดทำ</p></div><div><h3>❌ ห้าม</h3><ul><li>ห้ามนำไฟล์ PDF ไปจำหน่ายต่อ แจกฟรี หรือส่งต่อให้บุคคลอื่น</li><li>ห้ามอัปโหลดขึ้นเว็บไซต์ Facebook TikTok Google Drive หรือแพลตฟอร์มอื่นเพื่อเผยแพร่</li><li>ห้ามคัดลอก ดัดแปลง หรือนำภาพไปสร้างสินค้าเพื่อจำหน่าย</li><li>ห้ามใช้งานเชิงพาณิชย์โดยไม่ได้รับอนุญาต</li></ul></div><div class="allowed"><h3>✅ อนุญาต</h3><ul><li>ใช้สำหรับผู้ซื้อและครอบครัวเท่านั้น</li><li>ปริ้นใช้งานส่วนตัวได้หลายครั้ง</li><li>ใช้เพื่อการเรียนรู้และกิจกรรมภายในครอบครัว</li></ul><div class="commercial"><strong>📩 ใช้งานเชิงพาณิชย์</strong><br>ติดต่อ LINE <b>@110phoxx</b> เพื่อขออนุญาตก่อน</div></div></div></div></section>
 <footer><h2>Fufu & Tang Ngern Coloring Shop</h2><p>LINE @110phoxx • สมุดระบายสีไฟล์ PDF สำหรับเด็ก</p></footer>
 
 <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
@@ -483,9 +486,9 @@ footer p{color:#ffffff9c}
           <h2>Superhero Friends — Volume 1</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-1-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-1-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-1-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-1-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(1);closePreview(1)">เพิ่ม Volume 1 ลงตะกร้า</button>
         </div>
@@ -497,9 +500,9 @@ footer p{color:#ffffff9c}
           <h2>Coloring Adventure — Volume 2</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-2.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-2-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-2-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-2.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-2-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-2-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(2);closePreview(2)">เพิ่ม Volume 2 ลงตะกร้า</button>
         </div>
@@ -511,9 +514,9 @@ footer p{color:#ffffff9c}
           <h2>Sky Guardians — Volume 3</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-3.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-3-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-3-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-3.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-3-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-3-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(3);closePreview(3)">เพิ่ม Volume 3 ลงตะกร้า</button>
         </div>
@@ -525,9 +528,9 @@ footer p{color:#ffffff9c}
           <h2>Enchanted Forest Friends — Volume 4</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-4.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-4-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-4-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-4.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-4-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-4-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(4);closePreview(4)">เพิ่ม Volume 4 ลงตะกร้า</button>
         </div>
@@ -539,9 +542,9 @@ footer p{color:#ffffff9c}
           <h2>The Frozen Shadow Castle — Volume 5</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-5.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-5-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-5-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-5.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-5-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-5-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(5);closePreview(5)">เพิ่ม Volume 5 ลงตะกร้า</button>
         </div>
@@ -553,9 +556,9 @@ footer p{color:#ffffff9c}
           <h2>The City of Five Heroes — Volume 6</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-6.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-6-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-6-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-6.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-6-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-6-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(6);closePreview(6)">เพิ่ม Volume 6 ลงตะกร้า</button>
         </div>
@@ -567,9 +570,9 @@ footer p{color:#ffffff9c}
           <h2>Fruit Friends — Volume 7</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-7.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-7-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-7-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-7.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-7-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-7-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(7);closePreview(7)">เพิ่ม Volume 7 ลงตะกร้า</button>
         </div>
@@ -581,9 +584,9 @@ footer p{color:#ffffff9c}
           <h2>Dinosaur World — Volume 8</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-8.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-8-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-8-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-8.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-8-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-8-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(8);closePreview(8)">เพิ่ม Volume 8 ลงตะกร้า</button>
         </div>
@@ -595,9 +598,9 @@ footer p{color:#ffffff9c}
           <h2>Fairytale Princess — Volume 9</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-9.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-9-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-9-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-9.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-9-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-9-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(9);closePreview(9)">เพิ่ม Volume 9 ลงตะกร้า</button>
         </div>
@@ -609,9 +612,9 @@ footer p{color:#ffffff9c}
           <h2>Dinosaur World • Version 2 — Volume 10</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-10.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-10-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-10-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-10.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-10-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-10-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(10);closePreview(10)">เพิ่ม Volume 10 ลงตะกร้า</button>
         </div>
@@ -623,9 +626,9 @@ footer p{color:#ffffff9c}
           <h2>Fruit World • Version 2 — Volume 11</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-11.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-11-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-11-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-11.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-11-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-11-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(11);closePreview(11)">เพิ่ม Volume 11 ลงตะกร้า</button>
         </div>
@@ -637,14 +640,16 @@ footer p{color:#ffffff9c}
           <h2>Princess World • Version 2 — Volume 12</h2>
           <p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p>
           <div class="preview-images">
-            <figure><figcaption>หน้าปก</figcaption><img src="cover-volume-12.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img src="sample-volume-12-page-1.jpg"></figure>
-            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img src="sample-volume-12-page-2.jpg"></figure>
+            <figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-12.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-12-page-1.jpg"></figure>
+            <figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-12-page-2.jpg"></figure>
           </div>
           <button class="btn primary wide" onclick="addVolume(12);closePreview(12)">เพิ่ม Volume 12 ลงตะกร้า</button>
         </div>
       </div>
     
+
+<div class="preview-modal" id="preview-13"><div class="preview-box"><button class="modal-close" onclick="closePreview(13)">×</button><h2>Princess World • Version 2 — Volume 13</h2><p>หน้าปก 1 ภาพ และตัวอย่างหน้าระบายสี 2 หน้า</p><div class="preview-images"><figure><figcaption>หน้าปก</figcaption><img loading="lazy" src="cover-volume-13.jpg"></figure><figure><figcaption>ตัวอย่างหน้า 1</figcaption><img loading="lazy" src="sample-volume-13-page-1.jpg"></figure><figure><figcaption>ตัวอย่างหน้า 2</figcaption><img loading="lazy" src="sample-volume-13-page-2.jpg"></figure></div><button class="btn primary wide" onclick="addVolume(13);closePreview(13)">เพิ่ม Volume 13 ลงตะกร้า</button></div></div>
 <a class="line-float" href="https://line.me/R/ti/p/%40110phoxx" target="_blank">💬</a>
 
 <script>
@@ -652,7 +657,7 @@ const lineUrl='https://line.me/R/oaMessage/%40110phoxx/?';
 let cart=JSON.parse(localStorage.getItem('fufu-cart-12')||'[]');
 
 function saveCart(){localStorage.setItem('fufu-cart-12',JSON.stringify(cart));renderCart()}
-function addVolume(v){const item=cart.find(x=>x.v===v);if(item)item.q++;else cart.push({v,q:1});saveCart();openCart()}
+function addVolume(v){const item=cart.find(x=>x.v===v);if(item)item.q++;else cart.push({v,q:1});saveCart();showToast('เพิ่ม Volume '+v+' ลงตะกร้าแล้ว');openCart()}
 function changeQty(v,d){const x=cart.find(i=>i.v===v);if(!x)return;x.q+=d;if(x.q<=0)cart=cart.filter(i=>i.v!==v);saveCart()}
 function removeItem(v){cart=cart.filter(i=>i.v!==v);saveCart()}
 function totalQty(){return cart.reduce((s,i)=>s+i.q,0)}
@@ -664,7 +669,7 @@ function pricing(){
 function money(n){return new Intl.NumberFormat('th-TH').format(n)+' บาท'}
 function renderCart(){
  const box=document.getElementById('cartItems');
- box.innerHTML=cart.length?cart.map(i=>`<div class="cart-item"><img src="cover-volume-${i.v}.jpg"><div><strong>Volume ${i.v}</strong><div class="qty"><button onclick="changeQty(${i.v},-1)">−</button><span>${i.q}</span><button onclick="changeQty(${i.v},1)">+</button></div></div><button class="remove" onclick="removeItem(${i.v})">ลบ</button></div>`).join(''):'<p style="text-align:center;color:#777">ยังไม่มีสินค้าในตะกร้า</p>';
+ box.innerHTML=cart.length?cart.map(i=>`<div class="cart-item"><img loading="lazy" src="cover-volume-${i.v}.jpg"><div><strong>Volume ${i.v}</strong><div class="qty"><button onclick="changeQty(${i.v},-1)">−</button><span>${i.q}</span><button onclick="changeQty(${i.v},1)">+</button></div></div><button class="remove" onclick="removeItem(${i.v})">ลบ</button></div>`).join(''):'<p style="text-align:center;color:#777">ยังไม่มีสินค้าในตะกร้า</p>';
  const p=pricing();
  document.getElementById('cartCount').textContent=p.qty;
  document.getElementById('fullPrice').textContent=money(p.full);
@@ -729,6 +734,15 @@ document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('clic
 }));
 
 renderCart();
+
+function showToast(text){const t=document.getElementById('toast');t.textContent=text;t.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove('show'),1800)}
+let favorites=JSON.parse(localStorage.getItem('fufu-favorites')||'[]');
+function toggleFavorite(event,btn){event.stopPropagation();const card=btn.closest('.product-card');const match=card.dataset.search.match(/volume (\d+)/);if(!match)return;const v=Number(match[1]);favorites=favorites.includes(v)?favorites.filter(x=>x!==v):[...favorites,v];localStorage.setItem('fufu-favorites',JSON.stringify(favorites));btn.classList.toggle('active',favorites.includes(v));showToast(favorites.includes(v)?'บันทึกรายการโปรดแล้ว':'นำออกจากรายการโปรดแล้ว')}
+function renderFavorites(){document.querySelectorAll('.product-card').forEach(card=>{const m=card.dataset.search.match(/volume (\d+)/);if(m){const b=card.querySelector('.favorite-btn');if(b)b.classList.toggle('active',favorites.includes(Number(m[1])))}})}
+let deferredPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;document.getElementById('installBtn').style.display='inline-block'});document.getElementById('installBtn').addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;document.getElementById('installBtn').style.display='none'});
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}))}
+renderFavorites();
+
 </script>
-</body>
+<div class="toast" id="toast">เพิ่มลงตะกร้าแล้ว</div></body>
 </html>

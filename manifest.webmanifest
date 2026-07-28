@@ -1,0 +1,9 @@
+{
+  "name": "Fufu & Tang Ngern Coloring Shop",
+  "short_name": "Fufu Shop",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f6ff",
+  "theme_color": "#3a28c7",
+  "icons": []
+}
